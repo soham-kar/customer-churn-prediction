@@ -24,17 +24,34 @@ Customer churn is a major problem in industries like telecom, where retaining ex
 
 ## 📊 Project Workflow
 
-1. **Data Exploration & Visualization (EDA):**
-   - Univariate & bivariate analysis (e.g., gender, tenure, contract type).
-   - Correlation heatmaps & churn distribution.
-2. **Preprocessing:**
-   - Categorical encoding (Label, One-Hot).
-   - Feature scaling.
-   - Saving encoders & scalers for reuse.
-3. **Modeling:**
-   - Hyperparameter tuning via `GridSearchCV`.
-   - ANN built using TensorFlow/Keras.
-   - EarlyStopping & TensorBoard for evaluation.
+## 🔄 Project Workflow
+
+### 1️⃣ Data Exploration & Visualization (EDA)
+- 📊 **Univariate & Bivariate Analysis**  
+  → Explored features like gender, tenure, and contract type  
+- 🔥 **Churn Distribution & Correlation Analysis**  
+  → Used heatmaps to identify feature relationships and potential churn indicators
+
+---
+
+### 2️⃣ Preprocessing
+- 🧩 **Categorical Encoding**  
+  → Applied Label Encoding & One-Hot Encoding where appropriate  
+- 📏 **Feature Scaling**  
+  → Used `StandardScaler` to normalize numerical inputs  
+- 💾 **Saving Pipelines**  
+  → Persisted encoders & scalers using `pickle` for reuse in app deployment
+
+---
+
+### 3️⃣ Modeling
+- 🔍 **Hyperparameter Tuning**  
+  → Optimized with `GridSearchCV` to find best batch size, epochs, and optimizer  
+- 🧠 **Model Architecture**  
+  → Built an Artificial Neural Network (ANN) using TensorFlow/Keras  
+- 📉 **Evaluation & Monitoring**  
+  → Integrated `EarlyStopping` and **TensorBoard** for training visualization and diagnostics
+
 4. 📉 Model Training Metrics (TensorBoard)
 
 Below are the training metrics visualized using TensorBoard:
