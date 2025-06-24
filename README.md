@@ -52,19 +52,26 @@ Customer churn is a major problem in industries like telecom, where retaining ex
 - 📉 **Evaluation & Monitoring**  
   → Integrated `EarlyStopping` and **TensorBoard** for training visualization and diagnostics
 
-4. 📉 Model Training Metrics (TensorBoard)
+### 4️⃣ 📈 Model Training Metrics (TensorBoard)
 
-Below are the training metrics visualized using TensorBoard:
+Below are the training metrics visualized using **TensorBoard** during model training:
 
 <p align="center">
   <img src="https://github.com/soham-kar/customer-churn-prediction/blob/main/tensorboard_metrics.png" width="800"/>
 </p>
 
-- ✅ **Validation Accuracy** reached **~86.9%**
+### 📊 Key Observations
+
+- ✅ **Validation Accuracy** steadily improved, reaching **~86.9%**
 - 📉 **Validation Loss** consistently decreased, indicating effective learning
-- 📈 Training and validation curves show **no overfitting**, thanks to early stopping
-5. **Deployment:**
-   - Deployed via a **Streamlit app** for interactive predictions.
+- 🧠 **Training vs. Validation curves** show **no overfitting**, thanks to `EarlyStopping`
+
+---
+
+### 5️⃣ 🌐 Deployment
+
+- 🚀 Deployed via a **Streamlit app** for real-time, interactive churn prediction  
+- 🧩 Integrated with saved preprocessing pipeline and trained ANN model
 
 ---
 
@@ -80,4 +87,13 @@ Below are the training metrics visualized using TensorBoard:
 ---
 
 ## 📂 Project Structure
-
+customer-churn-prediction/
+├── models/ # Saved model, encoder, and scaler files
+│
+├── Churn_Model_Training.ipynb # Main notebook: EDA, preprocessing, model training
+├── app.py # Streamlit app for deployment
+├── requirements.txt # Required Python libraries
+├── runtime.txt # Streamlit runtime config (for cloud deployment)
+├── README.md # Project overview and documentation
+├── tensorboard_metrics.png # TensorBoard training visualization
+└── workflow_diagram.png # "How it works" pipeline diagram
