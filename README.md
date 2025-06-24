@@ -29,9 +29,17 @@ Customer churn is a major problem in industries like telecom, where retaining ex
    - Hyperparameter tuning via `GridSearchCV`.
    - ANN built using TensorFlow/Keras.
    - EarlyStopping & TensorBoard for evaluation.
-4. **Evaluation:**
-   - Confusion matrix, accuracy, precision, recall, F1-score.
-   - ROC-AUC curve.
+4. 📉 Model Training Metrics (TensorBoard)
+
+Below are the training metrics visualized using TensorBoard:
+
+<p align="center">
+  <img src="https://github.com/<your-username>/<repo-name>/blob/main/tensorboard_metrics.png" width="800"/>
+</p>
+
+- ✅ **Validation Accuracy** reached **~86.9%**
+- 📉 **Validation Loss** consistently decreased, indicating effective learning
+- 📈 Training and validation curves show **no overfitting**, thanks to early stopping
 5. **Deployment:**
    - Deployed via a **Streamlit app** for interactive predictions.
 
