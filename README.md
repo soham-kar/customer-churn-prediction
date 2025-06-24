@@ -88,12 +88,24 @@ Below are the training metrics visualized using **TensorBoard** during model tra
 
 ## 📂 Project Structure
 customer-churn-prediction/
-├── models/ # Saved model, encoder, and scaler files
+├── models/ # 🔐 Contains saved encoders, scalers, and trained ANN model (.pkl/.h5 files)
 │
-├── Churn_Model_Training.ipynb # Main notebook: EDA, preprocessing, model training
-├── app.py # Streamlit app for deployment
-├── requirements.txt # Required Python libraries
-├── runtime.txt # Streamlit runtime config (for cloud deployment)
-├── README.md # Project overview and documentation
-├── tensorboard_metrics.png # TensorBoard training visualization
-└── workflow_diagram.png # "How it works" pipeline diagram
+├── Churn_Model_Training.ipynb # 📒 Jupyter notebook with full pipeline:
+│ # - EDA
+│ # - Preprocessing
+│ # - GridSearchCV tuning
+│ # - ANN model training and evaluation
+│
+├── app.py # 🌐 Streamlit script for deploying the model as a web app
+│ # - Loads saved model and encoders
+│ # - Takes user input and predicts churn
+│
+├── requirements.txt # 📦 Python package dependencies for the project
+│
+├── runtime.txt # ⚙️ Runtime environment file for Streamlit Cloud (e.g., python-3.10)
+│
+├── README.md # 📘 Project documentation — what you're reading now!
+│
+├── tensorboard_metrics.png # 📊 Training metrics screenshot from TensorBoard
+│
+└── workflow_diagram.png # 🧭 Visual diagram of the ML pipeline (EDA → Model → Deployment)
