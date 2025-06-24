@@ -7,15 +7,15 @@ import pickle
 # --- Load model and preprocessing objects ---
 @st.cache_resource
 def load_model_and_assets():
-    model = tf.keras.models.load_model('my_model.keras')
+    model = tf.keras.models.load_model('models/my_model.keras')
 
-    with open('label_encoder_gender.pkl', 'rb') as file:
+    with open('models/label_encoder_gender.pkl', 'rb') as file:
         label_encoder_gender = pickle.load(file)
 
-    with open('onehot_encoder_geo.pkl', 'rb') as file:
+    with open('models/onehot_encoder_geo.pkl', 'rb') as file:
         onehot_encoder_geo = pickle.load(file)
 
-    with open('scaler.pkl', 'rb') as file:
+    with open('models/scaler.pkl', 'rb') as file:
         scaler = pickle.load(file)
 
     return model, label_encoder_gender, onehot_encoder_geo, scaler
