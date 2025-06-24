@@ -1,5 +1,4 @@
-# customer-churn-prediction
-Customer churn prediction using a Keras-based ANN with preprocessing, feature scaling, and hyperparameter tuning via GridSearchCV. Includes model evaluation with early stopping and TensorBoard, and a Streamlit app for deployment.
+
 # 🧠 Customer Churn Prediction
 
 This project builds an end-to-end deep learning pipeline to predict customer churn using an Artificial Neural Network (ANN). It includes preprocessing, feature engineering, hyperparameter tuning, model evaluation with TensorBoard, and deployment using Streamlit.
