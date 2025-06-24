@@ -34,7 +34,7 @@ Customer churn is a major problem in industries like telecom, where retaining ex
 Below are the training metrics visualized using TensorBoard:
 
 <p align="center">
-  <img src="https://github.com/<your-username>/<repo-name>/blob/main/tensorboard_metrics.png" width="800"/>
+  <img src="https://github.com/<soham-kar>/<customer-churn-prediction>/blob/main/tensorboard_metrics.png" width="800"/>
 </p>
 
 - ✅ **Validation Accuracy** reached **~86.9%**
