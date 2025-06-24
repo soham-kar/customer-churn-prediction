@@ -19,7 +19,7 @@ Customer churn is a major problem in industries like telecom, where retaining ex
 ## 🧭 How It Works
 
 <p align="center">
-  <img src="https://github.com/soham-kar/customer-churn-prediction/blob/main/workflow_diagram.png" width="900"/>
+  <img src="https://github.com/soham-kar/customer-churn-prediction/blob/main/workflow_diagram.png" width="1400 "/>
 </p>
 
 ## 📊 Project Workflow
